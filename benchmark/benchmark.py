@@ -157,7 +157,7 @@ def plot_polar(bm, calc, stats):
 
             calc_vmg = vmg_stats(calc[s])
             ax.text(0.8, 0.2,
-                "  vmg:%1.2f,%1.2f\n$\Delta$vmg:%1.2f,%1.2f\n$\Delta$ang:%1.2f,%1.2f\n$\sigma$:%1.2f\n$\mu_{1/2}$:%1.2f" %
+                r"  vmg:%1.2f,%1.2f\n$\Delta$vmg:%1.2f,%1.2f\n$\Delta$ang:%1.2f,%1.2f\n$\sigma$:%1.2f\n$\mu_{1/2}$:%1.2f" %
                     (calc_vmg['up'], calc_vmg['down'],
                         stats[f]['vmg_up'][i], stats[f]['vmg_down'][i],
                         stats[f]['ang_up'][i], stats[f]['ang_down'][i],
@@ -180,7 +180,7 @@ def plot_stats(stats):
             "k",
             lw=1,
             linestyle=(0, ()),
-            label="$\sigma$",
+            label=r"$\sigma$",
         )
         ax.plot(
             tws,
@@ -188,7 +188,7 @@ def plot_stats(stats):
             "k",
             lw=1,
             linestyle=(0, (1.1, 1.1)),
-            label="$\mu_{1/2}$",
+            label=r"$\mu_{1/2}$",
         )
         ax.plot(
             tws,

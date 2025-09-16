@@ -34,8 +34,8 @@ def data_to_vpp(data: Dict[str, Any]) -> VPP:
         Span=float(data["keel"]["Span"])
     )
     rudder = Rudder(
-        Cu=float(data["rudder"]["Cu"]), 
-        Cl=float(data["rudder"]["Cu"]), 
+        Cu=float(data["rudder"]["Cu"]),
+        Cl=float(data["rudder"]["Cl"]),
         Span=float(data["rudder"]["Span"])
     )
     yacht = Yacht(
